@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!ELEMENT products (product)*>
+
+<!ELEMENT product (price|content)*>
+<!ATTLIST product
+    description CDATA #IMPLIED>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT content (kiwi|banana|strawberry|egg|apple)*>
+<!ELEMENT apple EMPTY>
+<!ATTLIST apple
+    category CDATA #IMPLIED
+    count CDATA #IMPLIED
+  >
+<!ELEMENT egg EMPTY>
+<!ATTLIST egg
+    category CDATA #IMPLIED
+    count CDATA #RESTRICTED
+  >
+<!ELEMENT strawberry EMPTY>
+<!ATTLIST strawberry
+    category CDATA #IMPLIED
+    count CDATA #RESTRICTED
+  >
+<!ELEMENT banana EMPTY>
+<!ATTLIST banana
+    category CDATA #IMPLIED
+    count CDATA #RESTRICTED
+  >
+<!ELEMENT kiwi EMPTY>
+<!ATTLIST kiwi
+    category CDATA #IMPLIED
+    count CDATA #RESTRICTED
+  >
