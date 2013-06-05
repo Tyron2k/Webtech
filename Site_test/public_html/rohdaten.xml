@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<products>
+<product description="Biokiste mini">
+<price>10€</price>
+<content>
+<apple count="2"></apple>
+<egg count="5"/>
+<strawberry count="10" category="fruit"/>
+<banana count="4"/>
+</content>
+</product>
+<product description="Biokiste normal">
+<price>20€</price>
+<content>
+<apple count="5" category="fruit"/>
+<kiwi count="2"/>
+<egg count="10"/>
+<strawberry count="20" category="fruit"/>
+</content>
+</product>
+<product description="Biokiste maxi">
+<price>20€</price>
+<content>
+<apple count="10" category="fruit"/>
+<egg count="5"/>
+<kiwi count="2" category="fruit"/>
+<strawberry count="20" category="fruit"/>
+<banana count="7" />
+</content>
+</product>
+</products>
