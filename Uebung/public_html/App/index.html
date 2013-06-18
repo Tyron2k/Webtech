@@ -13,8 +13,10 @@
         $(document).ready(function() {
             $.getJSON("http://rfid.wifa.uni-leipzig.de/webtech1/news.json.php", function(data) {
                 $.each(data.News, function() {
-                    alert(this.Meldung);
+                    //alert(this.Meldung);
+                $("#_news").append('<li><div>' + this.Datum + '</div><div>' + this.Meldung + '</div></li>');                    
                 });
+                $("ul").listview('refresh');
             });
         });
     </script>
@@ -34,7 +36,7 @@
             <ul data-role="listview" id="_news" data-inset="true">
                 <li data-role="list-divider">News
                 </li>
-
+               
                 <!--                <li>
                     <time datetime="10.04.2013">10.04.2013</time>
                     <div>Bauernhof Krause baut nun auch Tomaten an.</div>
@@ -48,6 +50,7 @@
                     <div>Erstbesteller erhalten eine Gurke gratis!</div>
                 </li>-->
             </ul>
+         
         </div>
 
         <div data-role="footer" data-position="fixed">
