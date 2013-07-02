@@ -13,7 +13,7 @@
 </head>
 <body>
     <div data-role="page" id="_pageMain" data-class="ui-page" data-title="Leipziger Biokiste">
-        <div data-role="header" id="_headerIndex">
+        <div data-role="header" id="_headerIndex" data-theme="b">
             <h1>Leipziger Biokiste</h1>
         </div>
         <div data-role="content" id="_contentMain">
@@ -41,7 +41,7 @@
          
         </div>
 
-        <div data-role="footer" data-position="fixed">
+        <div data-role="footer" data-position="fixed" data-theme="b">
             <div data-role="navbar">
                 <ul>
                     <li>
@@ -52,13 +52,17 @@
                         <a href="#catalog" data-icon="search"
                             data-transition="slide">Angebot</a>
                     </li>
+                    <li>
+                        <a href="#impressum" data-icon="info"
+                            data-transition="slide">Über uns</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </div>
 
     <div data-role="page" id="catalog" data-class="ui-page" data-title="Angebot">
-        <div data-role="header" id="_headerCatalog">
+        <div data-role="header" id="_headerCatalog" data-theme="b">
             <h1>Unser Angebot</h1>
         </div>
         <div data-role="content" id="_contentCatalog">
@@ -68,7 +72,7 @@
                         <img src="http://sphotos-a.xx.fbcdn.net/hphotos-frc1/s720x720/382269_373240696107700_109736414_n.jpg"
                             alt="Biokiste mini" width="25%" height="25%" />
                         <div class="_orderLink">
-                            <a data-role="button" href="#order" data-rel="dialog" data-transition="flip" style="text-decoration: none;">Bestellen</a>
+                            <a data-role="button" href="#order" data-rel="dialog" data-transition="pop" style="text-decoration: none;">Bestellen</a>
                         </div>
                     </div>
                     <h3>
@@ -96,8 +100,7 @@
                             alt="Biokiste mini" width="25%" height="25%" />
                         <div class="_orderLink">
 
-                            <a data-role="button" href="#order" data-rel="dialog"
-                                data-transition="flip" style="text-decoration: none;">Bestellen</a>
+                            <a data-role="button" href="#order" data-rel="dialog" data-transition="pop" style="text-decoration: none;">Bestellen</a>
 
                         </div>
                     </div>
@@ -121,7 +124,7 @@
                         <img src="http://www.social-media-rallye.de/wp-content/uploads/2012/12/Kiste_alles.jpg"
                             alt="Biokiste mini" width="25%" height="25%" />
                         <div class="_orderLink">
-                            <a data-role="button" href="#order" data-rel="dialog" data-transition="flip" style="text-decoration: none;">Bestellen</a>
+                            <a data-role="button" href="#order" data-rel="dialog" data-transition="pop" style="text-decoration: none;">Bestellen</a>
                         </div>
                     </div>
                     <h3>Biokiste Maxi<span class="_price">30€</span></h3>
@@ -143,7 +146,7 @@
                 </div>
             </div>
         </div>
-        <div data-role="footer" data-position="fixed">
+        <div data-role="footer" data-position="fixed" data-theme="b">
             <div data-role="navbar">
                 <ul>
                     <li>
@@ -154,13 +157,17 @@
                         <a href="#catalog" data-icon="search"
                             data-transition="slide">Angebot</a>
                     </li>
+                    <li>
+                        <a href="#impressum" data-icon="info"
+                            data-transition="slide">Über uns</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </div>
 
     <div data-role="page" id="order" data-close-btn="right" data-corners="false">
-        <div data-role="header" data-theme="b" style="min-height: 30px;">
+        <div data-role="header" data-theme="b" style="min-height: 30px;" data-theme="B">
             <span style="font-size: x-large">Bestellung</span>
         </div>
         <div data-role="content" data-theme="b">
@@ -187,5 +194,38 @@
             </form>
         </div>
     </div>
+    
+            <div data-role="page" id="impressum" data-class="ui-page" data-title="Über die Leipziger Biokiste">
+        <div data-role="header" id="_headerIndex" data-theme="b">
+            <h1>Das Leipziger Biokiste Team</h1>
+        </div>
+                <div data-role="content" id="_contentImpressum">
+            <h2 id="_caption">Ihr Team hinter der Frische</h2>
+            <p id="_description">
+            <h3>Unterhalb der Überschrift soll ein kleiner kreativer Text eingefügt werden. Den-
+ken Sie sich was aus ;)</h3>
+            
+           
+         
+        </div>
+                        <div data-role="footer" data-position="fixed" data-theme="b">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#_pageMain" data-icon="home"
+                            data-transition="slide" data-direction="reverse">Home</a>
+                    </li>
+                    <li>
+                        <a href="#catalog" data-icon="search"
+                            data-transition="slide" data-direction="reverse">Angebot</a>
+                    </li>
+                    <li>
+                        <a href="#impressum" data-icon="info"
+                            data-transition="slide">Über uns</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
 </body>
 </html>
