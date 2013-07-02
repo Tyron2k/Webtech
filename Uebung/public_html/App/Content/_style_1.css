@@ -1,0 +1,34 @@
+﻿body {
+    font-family: "Trebuchet MS";
+    text-align: justify;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+#_content {
+    background: transparent url("http://upload.wikimedia.org/wikipedia/commons/b/b6/Tomato-Torrent-Icon.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding-top: 20%
+}
+
+#_caption {
+    font-weight: bold;
+    text-align: center;
+}
+
+#_description {
+    font-size: larger;
+    line-height: 1.3;
+}
+
+._price {
+    float: right;
+}
+
+._orderLink {
+    float: right; 
+    margin-top: 5%
+}
